@@ -1,0 +1,145 @@
+body {
+  background-color: lightskyblue;
+}
+.div-ul-header {
+  border-radius: 0.4rem;
+  background-color: black;
+  padding: 0.5rem;
+}
+.navbarHome {
+  background-color: lightpink;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 1px;
+  bottom: 1px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+.slider.round {
+  border-radius: 20px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.dark-light {
+  background-color: #111 !important;
+  background-image: none !important;
+}
+.dark-light #chatinhalt {
+  background-color: #444040 !important;
+  background-image: none !important;
+}
+.dark-light #onlinelist {
+  background-color: #444040 !important;
+  color: #fff;
+  background-image: none !important;
+}
+.dark-light #welcome {
+  background-color: #0e054ade !important;
+}
+.dark-light .linkdooni {
+  background-color: #0e054ade !important;
+}
+.dark-light .newsServerAfroz {
+  background-color: #0e054ade !important;
+}
+.dark-light .rooms {
+  background-color: #0d0d0d !important;
+  filter: grayscale(100%);
+}
+.dark-light #form {
+  background-color: #0d0d0d !important;
+  filter: grayscale(100%);
+}
+.dark-light .mess_back {
+  color: #e8d11a !important;
+}
+.dark-light .tlg {
+  color: #fff !important;
+}
+.dark-light #box {
+  background-color: #97682d42 !important;
+  border: none;
+}
+.dark-light #regbtn {
+  background-color: #1a1719;
+  border: 3px outset #ffd700;
+}
+.dark-light #onlinelist span {
+  color: #fff !important;
+}
+.dark-light .ServerAfroz_win_content {
+  background-color: #444040 !important;
+}
+.div-footer {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding: 20px;
+  width: 900px;
+  border-radius: 1rem;
+  background-color: rgb(75, 43, 48);
+  box-shadow: 3px 3px 3px rgb(45, 41, 41);
+}
+.Social-Networks {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 100%;
+  color: #fff;
+}
+.Social-Networks a {
+  text-decoration: none;
+  color: #fff;
+  z-index: 1;
+}
+.Social-Networks a:hover {
+  opacity: 0.5;
+}
+.Designing {
+  position: relative;
+  bottom: 3rem;
+}
+.Designing p {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: palevioletred;
+  font-size: 1rem;
+  color: #fff;
+}

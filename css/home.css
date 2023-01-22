@@ -1,0 +1,197 @@
+body {
+  background-image: url("/img/img-home/bg-home.jpg");
+  background-size: cover;
+}
+.navbarHome {
+  background-color: lightpink;
+}
+/* loading */
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+/* end loading */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 1px;
+  bottom: 1px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+.slider.round {
+  border-radius: 20px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.dark-light {
+  background-color: #111 !important;
+  background-image: none !important;
+}
+/* Page header style */
+
+/* home card */
+.divBox {
+  width: 15rem;
+  height: 30rem;
+  margin: 1rem;
+  overflow-wrap: break-word;
+  border-radius: 0.8rem;
+  box-shadow: 6px 6px 6px black;
+  background-color: rgb(125, 58, 81);
+}
+.divBox:hover {
+  opacity: 0.8;
+}
+
+.parentDivBox {
+  padding: 1rem;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px palevioletred;
+  background-color: pink;
+}
+.div-footer {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding: 20px;
+  width: 900px;
+  border-radius: 1rem;
+  background-color: rgb(75, 43, 48);
+  box-shadow: 3px 3px 3px rgb(45, 41, 41);
+}
+.Social-Networks {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 100%;
+  color: #fff;
+}
+.Social-Networks a {
+  text-decoration: none;
+  color: #fff;
+  z-index: 1;
+}
+.Social-Networks a:hover {
+  opacity: 0.5;
+}
+.Designing {
+  position: relative;
+  bottom: 3rem;
+}
+.Designing p {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: palevioletred;
+  font-size: 1rem;
+  color: #fff;
+}
+.button-search {
+  background-color: rgb(29, 20, 53);
+  color: #fff;
+  border-radius: 0.3rem;
+}
+.button-search:hover {
+  background-color: green;
+}
+.Top-Airing-Anime {
+  border-radius: 1rem;
+}
+.spanTitle {
+  text-align: center;
+  color: #fff;
+  padding: 2px;
+  font-size: 80%;
+}
+.download {
+  text-align: center;
+  background-color: rgb(18, 13, 90);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  padding: 0.3rem;
+}
+.download:hover {
+  background-color: #2196f3;
+}
+@media only screen and (min-width: 500px) {
+  .ul-header a {
+    font-size: 150%;
+  }
+  .Social-Networks {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 160%;
+  }
+}
