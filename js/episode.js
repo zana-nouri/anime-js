@@ -4,7 +4,7 @@ const query = params.get("id");
 
 //
 
-const apiGetAnimeEpisodeStreaminglinks = `https://api.consumet.org/anime/gogoanime/watch/${query} `;
+const apiGetAnimeEpisodeStreaminglinks = `https://api.consumet.org/anime/gogoanime/watch/${query}`;
 
 async function GetAnimeEpisodeStreaminglinks() {
   const apiFech = await fetch(apiGetAnimeEpisodeStreaminglinks);
